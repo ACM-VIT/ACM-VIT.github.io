@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="Language" content="en" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ACM-VIT Recruitments</title>
+  <link rel="icon" href="img/favicon.ico" />
+  <meta name="description" content="ACM-VIT is recruiting. Get ready to join the best technical chapter of VIT." />
+  <meta name="keywords" content="ACM-VIT, saurav kumar bhagat, saurav bhagat,Akhsit grover, ACM recruitments,harshit kedia, ACM">
+  <meta name="author" content="Saurav Bhagat">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ACM-VIT recruitment" />
+  <meta property="og:url" content="www.acm-vit.surge.sh" />
+  <meta property="og:title" content="ACM-VIT recruitment" />
+  <meta property="og:description" content="ACM-VIT is recruiting. Get ready to join the best technical chapter of VIT." />
+  <meta property="og:image" content="http://acm-vit.surge.sh/img/logo.png" />
+  <meta itemprop="name" content="ACM-VIT recruitment" />
+  <meta itemprop="description" content="ACM-VIT is recruiting. Get ready to join the best technical chapter of VIT." />
+  <meta itemprop="image" content="img/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/6367357e3c.js"></script>
+  <script src="sweetalert-master/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
+  <style>
+  @media only screen and (max-width: 500px) {
+    #section1 #homeimage .hometext {
+      top: 177px;
+      font-size: 20px;
+      left:83px;
+    }
+  }
+
+
+  #section1 #homeimage .mainimage{
+    width: 1000px !important;
+  }
+  .collapsible-body{
+    background: white;
+  }
+  h4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: -0.99rem 0 1.168rem 0 !important;
+  }
+  .row{
+    margin-bottom: 13px;
+  }
+  /*888888888888888888888*/
+
+
+    #first_button{
+      background:#4B843A !important;
+      border-radius: 5px;
+      color: white;
+      padding: 10px 20px;
+      border:none;
+      padding-right: 0px;
+      /*box-shadow: 8px 7px 5px #888888;*/
+
+    }
+    /*.firstbuttonlink{
+    padding: 22px;
+    background:#4B843A !important;
+    color: white;
+    border-radius: 4px;
+  }
+  .secondbuttonlink{
+  background:#F21919 !important;
+  border-radius: 4px;
+  padding:22px ;
+  color: white;
+  }*/
+  .final_submit{
+    margin-top: 40px !important;
+  }
+  #second_button{
+    background:#615DEC !important;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 16px !important;
+    color: white;
+    border: none;
+    padding-right:0px !important;
+    padding-left:20px !important;
+    /*box-shadow: 8px 7px 5px #888888;*/
+  }
+@media only screen and (max-width: 500px) {
+  .mainimage{
+    /*width: 100% !important;*/
+  }
+}
+hr{width: 80%;}
+
+[type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after {
+  border: 2px solid #eee;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+  background-color: #eee;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+  background-color: #eee;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+  border: 2px solid #eee;
+}
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+
+  border: 2px solid #eee;
+
+}
+[type="checkbox"]:checked+label:before {
+
+  border-right: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+
+}
+textarea.materialize-textarea {
+
+  border-bottom: 1px solid #eee;
+
+}
+
+
+/*88888888888888888888 border-bottom: 3px solid #fff;padding-bottom: 3px;*/
+</style>
+
+</head>
+<body>
+
+
+  <!-- <div> -->
+  <div class="row" id="section1">
+    <div class="col l7 s12" id="homeimage">
+
+      <img  src="img/home.png"  class="responsive-img mainimage">
+
+    </div>
+
+
+
+    <div class="col l5 s12 about-text center-align"><br>
+      <h3 style="margin-bottom:3px"> ACM Recruitments</h3><hr><br>
+      <p class="text-center ">
+        Right from its inception in 2009, the ACM VIT Student Chapter has been organising and conducting
+        succesful technical and professional development events. Technology is its cause and education is its objective.
+      </p><br>
+
+      <h5>  Technical | Design | Management | Research</h5><br><br>
+      <div class="row">
+        <div class="col s12 align-center">
+          <a href="#section2" class="firstbuttonlink"><button class="z-depth-4" id="first_button" type="submit" name="action">Apply Now
+            <!-- <i class="material-icons right">send</i> --><span class="leftarrowfirst">&nbsp;&nbsp;&#62;</span>
+          </button></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 align-center">
+          <a class="secondbuttonlink" href="#section3"><button id="second_button" class="z-depth-4  " type="submit" name="action">Recruitment Process
+            <!-- <i class="material-icons right">send</i>--><span class="leftarrowsecond">&nbsp;&nbsp;&#62;</span>
+          </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---section1 end-->
+
+
+  <!---------------------------------------------------->
+  <div id="section2">
+    <div class="container">
+      <h4 class="" style="margin:0">Registration</h4>
+      <div class="row">
+        <form class="col s12" >
+          <!-- method="post" action="http://acmrecruitment.herokuapp.com/submit/form" -->
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="name" type="text" name="name" class="validate" required>
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="reg_no" type="text" minlength="8" maxlength="10" pattern="^([0-9]{2})([a-zA-Z]{3})([0-9]{3,4})$" name="regno" class="validate" required>
+              <label for="last_name" data-error="wrong">Registration Number</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="phone" type="text" minlength="10" maxlength="13" name="phoneno" class="validate" required>
+              <label for="contact">Phone Number</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="email" type="email" name="email" class="validate" required>
+              <label for="email" data-error="wrong">Email</label>
+
+            </div>
+          </div><br>
+          <h5> Select your Domain&nbsp;<strong>:</strong></h5>
+          <div class="row">
+            <div class="col m3 s6">
+              <span class="radio-span">
+                <input class="with-gap" value="Technical" name="domain" type="radio" id="test1" />
+                <label for="test1" id="tests1">Technical</label>
+              </span>
+            </div>
+            <div class="col m3 s6">
+              <span class="radio-span">
+                <input class="with-gap" value="Research" name="domain" type="radio" id="test4"  />
+                <label for="test4" id="tests4">Research</label>
+              </span>
+
+            </div>
+            <div class="col m3 s6">
+              <span class="radio-span">
+                <input class="with-gap" value="Design" name="domain" type="radio" id="test2" />
+                <label for="test2" id="tests2">Design</label>
+              </span>
+            </div>
+            <div class="col m3 s6">
+              <span class="radio-span">
+                <input class="with-gap" value="Management" name="domain" type="radio" id="test3"  />
+                <label for="test3" id="tests3">Management</label>
+              </span>
+            </div>
+
+          </div>
+          <br>
+          <!--8888888888888888888888888888888-->
+          <div class="tech_options" style="display:none;">
+            <p>
+              <input type="checkbox"  value="Frontend" name="subdomain" id="test5" />
+              <label for="test5">Frontend</label>
+            </p>
+            <p>
+              <input type="checkbox"  value="Backend" name="subdomain" id="test6" />
+              <label for="test6">Backend</label>
+            </p>
+            <p>
+              <input type="checkbox" value="Android"  name="subdomain" id="test7" />
+              <label for="test7">Android</label>
+            </p>
+            <p>
+              <input type="checkbox"  value="Competitve Programming" name="subdomain" id="test8" />
+              <label for="test8">Competitve Programming</label>
+            </p>
+            <div class="input-field col s12 " id="others_specify">
+              <textarea id="textarea1" value=" " class="materialize-textarea"></textarea>
+              <label for="textarea1">Describe your skills...</label>
+            </div>
+          </div>
+          <div class="research_options" style="display:none;">
+            <p>
+              <input type="checkbox" value="ML" name="subdomain" id="test11" />
+              <label for="test11">ML</label>
+            </p>
+            <p>
+              <input type="checkbox" value="AI" name="subdomain" id="test12" />
+              <label for="test12">AI</label>
+            </p>
+            <p>
+              <input type="checkbox" value="Image-Processing" name="subdomain" id="test13" />
+              <label for="test13">Image Processing</label>
+            </p>
+            <p>
+              <input type="checkbox" value="Deep-learning" name="subdomain" id="test14" />
+              <label for="test14">Deep learning</label>
+            </p>
+            <div class="input-field col s12" id="others_specify">
+              <textarea id="textarea1" name="textfield" class="materialize-textarea"></textarea>
+              <label for="textarea1">Describe your skills....</label>
+            </div>
+
+          </div>
+
+          <!-- <div class="input-field center-align " id="others_specify">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Others Please specify</label>
+        </div> -->
+
+
+
+        <div class="input-field col s12 design_options" style="display:none;" >
+          <textarea id="textarea12" name="textarea" class="materialize-textarea"></textarea>
+          <label for="textarea12">Describe your skills....</label>
+        </div>
+
+
+        <div class="management_options" style="display:none;">
+          <div class="input-field col s12" >
+            <textarea id="textarea13" name="textarea" class="materialize-textarea"></textarea>
+            <label for="textarea13">Describe your skills....</label>
+          </div>
+        </div>
+        <!--88888888888888888888888888888-->
+        <div class="row">
+          <div class="col s4"></div>
+          <div class="col s4 align-center">
+            <div class="lds-css ng-scope center-align " id="loadinggif" style="display:none;" >
+              <div style="width:100%;height:100%" class="lds-pacman center-align">
+                <div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <style type="text/css">
+              @keyframes lds-pacman-1 {
+                0% {
+                  -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+                50% {
+                  -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+                }
+                100% {
+                  -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+              }
+              @-webkit-keyframes lds-pacman-1 {
+                0% {
+                  -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+                50% {
+                  -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+                }
+                100% {
+                  -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+              }
+              @keyframes lds-pacman-2 {
+                0% {
+                  -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+                }
+                50% {
+                  -webkit-transform: rotate(225deg);
+                  transform: rotate(225deg);
+                }
+                100% {
+                  -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+                }
+              }
+              @-webkit-keyframes lds-pacman-2 {
+                0% {
+                  -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+                }
+                50% {
+                  -webkit-transform: rotate(225deg);
+                  transform: rotate(225deg);
+                }
+                100% {
+                  -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+                }
+              }
+              @keyframes lds-pacman-3 {
+                0% {
+                  -webkit-transform: translate(190px, 0);
+                  transform: translate(190px, 0);
+                  opacity: 0;
+                }
+                20% {
+                  opacity: 1;
+                }
+                100% {
+                  -webkit-transform: translate(70px, 0);
+                  transform: translate(70px, 0);
+                  opacity: 1;
+                }
+              }
+              @-webkit-keyframes lds-pacman-3 {
+                0% {
+                  -webkit-transform: translate(190px, 0);
+                  transform: translate(190px, 0);
+                  opacity: 0;
+                }
+                20% {
+                  opacity: 1;
+                }
+                100% {
+                  -webkit-transform: translate(70px, 0);
+                  transform: translate(70px, 0);
+                  opacity: 1;
+                }
+              }
+              .lds-pacman {
+                position: relative;
+              }
+              .lds-pacman > div:nth-child(2) div {
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                width: 120px;
+                height: 60px;
+                border-radius: 120px 120px 0 0;
+                background: #e65460;
+                -webkit-animation: lds-pacman-1 1.5s linear infinite;
+                animation: lds-pacman-1 1.5s linear infinite;
+                -webkit-transform-origin: 60px 60px;
+                transform-origin: 60px 60px;
+              }
+              .lds-pacman > div:nth-child(2) div:nth-child(2) {
+                -webkit-animation: lds-pacman-2 1.5s linear infinite;
+                animation: lds-pacman-2 1.5s linear infinite;
+              }
+              .lds-pacman > div:nth-child(1) div {
+                position: absolute;
+                top: 92px;
+                left: -8px;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: #3cd3ad;
+                -webkit-animation: lds-pacman-3 1.5s linear infinite;
+                animation: lds-pacman-3 1.5s linear infinite;
+              }
+              .lds-pacman > div:nth-child(1) div:nth-child(1) {
+                -webkit-animation-delay: -1.005s;
+                animation-delay: -1.005s;
+              }
+              .lds-pacman > div:nth-child(1) div:nth-child(2) {
+                -webkit-animation-delay: -0.495s;
+                animation-delay: -0.495s;
+              }
+              .lds-pacman > div:nth-child(1) div:nth-child(3) {
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+              }
+              .lds-pacman {
+                width: 94px !important;
+                height: 94px !important;
+                -webkit-transform: translate(-47px, -47px) scale(0.47) translate(47px, 47px);
+                transform: translate(-47px, -47px) scale(0.47) translate(47px, 47px);
+              }
+              </style></div>
+            </div>
+            <div class="col s4"></div>
+          </div>
+
+
+          <!--8888888888888888888888888888888-->
+
+
+          <div class="center-align">
+            <button class="btn  waves-effect waves-light final_submit" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------->
+
+  <!--https://acmrecruitment.herokuapp.com/submit/form-->
+
+
+  <div id="section3">
+    <div class="container" id="section3">
+      <h4 class="" style="color:white;">Recruitment Process</h4>
+      <ul class="collapsible bottompadd" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header active"><i class="material-icons">code</i><b>
+            Technical</b></div>
+            <div class="collapsible-body"><span>
+              <!-- <strong>Round 1: </strong><p>Offline round. Venue will be informed through SMS and email. &nbsp;2<sup>nd</sup> and 3<sup>rd</sup> August</p>
+              <strong>Round 2: </strong><p> You have to make a project given by us on respective domain which you have selected.</p>
+              <strong>Round 3: </strong><p>Personal Interview and you have to bring the task assigned with you. Before perosnal Inteview there will be an online round on hackerank</p> -->
+              <!---->
+              <ul class="collection">
+                <li class="collection-item">
+                  <span class="title"><b>Round 1:</b></span>
+                  <p>Offline round. Venue will be informed through SMS and email. &nbsp;2<sup>nd</sup> and 3<sup>rd</sup> August
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <span class="title"><b>Round 2:</b></span>
+                  <p>You have to make a project given by us on respective domain which you have selected.
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <span class="title"><b>Round 3:</b></span>
+                  <p>Personal Interview and you have to bring the task assigned with you. Before perosnal Inteview there will be an online round on hackerank
+                  </p>
+                </li>
+              </ul>
+              <!--   -->
+            </span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">work</i><b>Management</b></div>
+            <div class="collapsible-body"><span>
+              <ul class="collection">
+                <li class="collection-item">
+                  <span class="title"><b>Round 1:</b></span>
+                  <p>Offline round. Venue will be informed through SMS and email. &nbsp;2<sup>nd</sup> and 3<sup>rd</sup> August
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <span class="title"><b>Round 2:</b></span>
+                  <p>Personal Interview
+                  </p>
+                </li>
+
+              </ul>
+            </span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">palette</i><b>Design</b></div>
+            <div class="collapsible-body"><span>
+              <ul class="collection">
+                <li class="collection-item">
+                  <span class="title"><b>Round 1:</b></span>
+                  <p>Offline round. Venue will be informed through SMS and email. &nbsp;2<sup>nd</sup> and 3<sup>rd</sup> August
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <span class="title"><b>Round 2:</b></span>
+                  <p>Personal Interview
+                  </p>
+                </li>
+
+              </ul>
+            </span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">school</i><b>Research</b></div>
+            <div class="collapsible-body"><span>
+              <ul class="collection">
+                <li class="collection-item">
+                  <span class="title"><b>Round 1:</b></span>
+                  <p>Offline round. Venue will be informed through SMS and email. &nbsp;2<sup>nd</sup> and 3<sup>rd</sup> August
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <span class="title"><b>Round 2:</b></span>
+                  <p>You have to make a project given by us on respective domain which you have selected.
+                  </p>
+                </li>
+                <li class="collection-item">
+                  <span class="title"><b>Round 3:</b></span>
+                  <p>Personal Interview and you have to bring the task assigned with you. Before perosnal Inteview there will be an online round on hackerank
+                  </p>
+                </li>
+              </ul>
+            </span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer >
+      <div class="container" >
+        <div class="row" style="margin-bottom:0;">
+          <div class="col m4 s6 center-align">
+            <a href="http://acmvit.in">
+              <img src="img/acm.png" width="160px" >
+            </a>
+          </div>
+          <div class="col m4 s6 show-on-small-only hide-on-med-and-up center-align">
+            <a href="https://vit.ac.in">
+              <img src="img/vitlogo.png" width="160px">
+            </a>
+          </div>
+          <div class="col m4 s12  center-align">
+            <a class="github_red" href="https://github.com/ACM-VIT" ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+            <a class="fb_blue" href="https://facebook.com/ACM.VITU"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            <div><a href="http://acmvit.in" >acmvit.in</a></div>
+            <div><a  href="mailto:vituacm@gmail.com" target="_top">vituacm@gmail.com</a></div>
+            <div>8279887513</div>
+
+          </div>
+          <div class="col m4 hide-on-small-only center-align">
+            <a href="https://vit.ac.in">
+              <img src="img/vitlogo.png" width="160px">
+            </a>
+          </div>
+
+        </div>
+      </footer>
+      <!--88888888888888888888888888888888888888888-->
+
+
+
+      <!--888888888888888888888888888888888888888888-->
+
+      <!-- </div> -->
+
+
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+      <script src="js/script.js"></script>
+      <script>
+      $(document).ready(function(){
+        // $('#tests4').on('click',function(){
+        //   $('.research_options').fadeToggle(1500);
+        //   $('.tech_options').hide(1500);
+        //   $('#others_specify').show();
+        //
+        // });
+        // $('#tests1').on('click',function(){
+        //   $('.tech_options').fadeToggle(1500);
+        //   $('.research_options').hide(1500);
+        // });
+        $('#textarea1').trigger('autoresize');
+
+      });
+      </script>
+    </body>
+    </html>

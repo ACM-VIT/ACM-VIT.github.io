@@ -1,0 +1,103 @@
+
+#homeimage{
+
+  position: relative;
+  /*width: 100%;*/
+}
+#section1{
+  min-height: 100vh;
+  background: #4542a7;
+  color: white;
+margin:0;
+}
+#section2{
+  /*min-height: 100vh;*/
+  background:#222227;
+  color:#fff;
+  padding:60px 0;
+   /*#B0DDEA*/
+}
+#section3{
+  /*min-height: 100vh;*/
+  background: #4542a7;
+padding-bottom:40px;
+}
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+.mainimage{
+  position: relative;
+}
+#section1 #homeimage .hometext{
+  position: absolute;
+  top: 405px;
+  left: 168px;
+  font-size: 18px;
+}
+.about-text{
+  font-size: 19px;
+}
+.radio-span{
+  margin-left: 10px;
+}
+
+label{
+  color:#eee;
+}
+ .research_options {
+  /*position: absolute;*/
+  padding-left: 30px;
+}
+
+.github_red{
+  color: black;
+}
+
+.fb_blue{
+  color: black;
+}
+.fb_blue:hover{
+  color: blue;
+}
+.github_red:hover{
+  color: red !important;
+}
+#section3{
+
+}
+footer{
+  background-color: #f2f2f2;
+  padding:20px 0;
+}
+.leftarrowfirst{
+  padding-right: 0px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.leftarrowsecond{
+  padding-right: 0px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+#first_button:hover > .leftarrowfirst{
+  padding-right: 15px;
+  opacity: 1;
+
+}
+
+#second_button:hover > .leftarrowsecond{
+  padding-right: 15px;
+  opacity: 1;
+
+}
+/* #4542a7*/
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #ddd;
+    -webkit-box-shadow: 0 1px 0 0 #ddd;
+    box-shadow: 0 1px 0 0 #ddd;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #ddd;
+}
