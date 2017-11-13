@@ -154,7 +154,7 @@ $(document).ready(function() {
             document.getElementById('mainform').reset();
             swal({
                 title: "Thanks for registering!",
-                text: "Stay tuned!!",
+                text: "Stay tuned! We have sent you the confirmation on your email.",
                 timer: 2000,
                 showConfirmButton: false,
                 imageUrl: "sweetalert-master/example/images/thumbs-up.jpg"
