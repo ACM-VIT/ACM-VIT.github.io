@@ -26,13 +26,13 @@
 </head>
 <body>
 	<div id="whole-wrapper">
-		<div class="custom-navbar-wrapper">
-			<nav>
+		<div class="custom-navbar-wrapper" >
+			<div class="nav" id="navbar">
 				<div class="nav-wrapper">
 					<a href="http://acmvit.in" target="_blank" class="brand-logo"><img src="img/acmlogo1.png" class="mainlogo1" alt="ACM-VIT"></a>
 
 				</div>
-			</nav>
+			</div>
 		</div>
 
 		<div class="section-1">	
@@ -160,7 +160,7 @@
 			function show_success(name,department){
 				var text="<b>Congratulations "+capitalize(name)+"!</b> You have been selected in ACM under "+capitalize(department)+" domain. We look forward to working with you. Welcome to the ACM family!";
 				
-				
+				$(".nav").css({'background-color':'#558b2f'});
 				$("#result_para").html(text);
 				// $("#result_card").addClass("success-card");
 				$('#result_card').css({'background-color':'#558b2f'});
@@ -171,6 +171,7 @@
 				var text="We are sorry to inform you that you did not clear the last round of recruitment. We wish you best of luck and hope you will continue to be a part of ACM by participating in our events and workshops.";
 
 				$("#result_para").html(text);
+				$(".nav").css({'background-color':'#bf360c'});
 				// $("#result_card").addClass("success-card")#b71c1c;
 				$('#result_card').css({'background-color':'#bf360c'});
 				$("#result_card").fadeIn();
@@ -178,7 +179,7 @@
 
 			function show_not_registered(){
 				var text="We are sorry to inform you that you did not appeared for the second round of recruitments. We wish you best of luck and hope you will continue to be a part of ACM by participating in our events and workshops.";
-
+				$(".nav").css({'background-color':'#d32f2f'});
 				$("#result_para").html(text);
 				$('#result_card').css({'background-color':'#d32f2f'});
 				$("#result_card").fadeIn();

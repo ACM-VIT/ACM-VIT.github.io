@@ -10,10 +10,12 @@ body{
 	min-height: 100vh;
 }
 
-nav{
-	background-color: #1e88e5 !important;
+.nav{
+	background-color: #1e88e5 ;
 	box-shadow: none !important;
 	padding-right: 10px;
+	transition: all 0.5s ease-in;
+	text-align: center;
 	padding-left: 10px;
 }
 .brand-logo{
@@ -173,6 +175,7 @@ button, input, optgroup, select, textarea
 	
 	margin-right: auto !important;
 	margin-left: auto !important;
+	transition: all 0.5s ease-in;
 	background-color: #1e88e5;
 	border-radius: none !important;
 	box-shadow: none !important;
