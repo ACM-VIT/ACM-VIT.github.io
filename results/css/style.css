@@ -163,7 +163,6 @@ button, input, optgroup, select, textarea
 {
 	color: white !important;
 	font-size: 1.2rem;
-	padding-left: 10px !important;
 }
 
 .sub-btnn{
@@ -171,7 +170,7 @@ button, input, optgroup, select, textarea
 	top: 7px !important;
 }
 .res-card{
-	width: 64vw;
+	
 	margin-right: auto !important;
 	margin-left: auto !important;
 	background-color: #1e88e5;
@@ -221,5 +220,14 @@ footer p a {
 }
 
 @media only screen and (max-width: 601px) {
+.because-tech-matter{
+	color: #1e88e5;
+	text-transform: uppercase;
+	padding-top: 5vh;
+}
+}
 
+.regno{
+	padding-left: 10px !important;
+    width: 95%;
 }
