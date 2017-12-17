@@ -1,0 +1,225 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+* {box-sizing:border-box}
+.section-1{
+	background: url(../img/map.png) no-repeat ;
+	background-size: contain;
+	min-height: 100vh;
+}
+
+nav{
+	background-color: #1e88e5 !important;
+	box-shadow: none !important;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.brand-logo{
+	left: 45%;
+}
+#whole-wrapper{
+	min-height: 100vh;
+}
+.submit-btn{
+	background: transparent;
+    border: 2px solid #1e87e5;
+    border-radius: 4px;
+    padding: 8px 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e87e5 !important;
+    transition: all 0.2s ease-in;
+    margin-top: 14px;
+
+}
+.submit-btn:hover{
+	color: #fff !important;
+	background-color: #1e87e5;
+}
+.success-card{
+	background-color: green !important;
+}
+.mainlogo1{
+	width: 130px;
+}
+.remove-margin-top{
+	margin-top: 0 !important;
+}
+#pad-left-0{
+	padding-left: 0 !important;
+}
+.because-tech-matter{
+	color: #1e88e5;
+	text-transform: uppercase;
+	padding-top: 17vh;
+}
+.because-tech-matter h2{
+	font-weight: bolder;
+}
+.beacuse-tech-matter-mobile {
+	color: #1e88e5;
+	font-weight: bolder !important;
+	text-transform: uppercase;
+}
+.btm-mob{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.btm-mob h3{
+	font-weight: bold;
+
+}
+.side-blue-wrapper{
+
+	background-color: #1e88e5;
+	height: 60vh;
+	color: white;
+	width: 80%;
+	position: relative;
+	top: 3.2rem;
+}
+.content-inside-side-blue{
+	margin-top: 3rem;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+.content-inside-side-blue #head-acm-tab{
+
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+.content-inside-side-blue span {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background-color: white;
+	border-radius: 50%;
+}
+.content-inside-side-blue span img{
+	width: 29px;
+}
+.side-blue-wrapper-mobile{
+	background-color: #1e88e5;
+	width: 80%;
+	margin : 10px auto;
+	color: white;
+	padding :10px;
+	position: relative;
+
+}
+.side-blue-wrapper-mobile #head-acm-mobile{
+	font-weight: bold;
+	font-size: 1.2rem;
+	display: inline-block;
+	/*padding-left: 10px;*/
+	width: 65%;
+	margin-bottom: 0 !important;
+}
+.side-blue-wrapper-mobile span{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+
+@media only screen and (min-width: 701px) {
+    /*For Desktop */
+	.section-1{
+		min-height: 100vh;
+	}
+}
+
+/*   Footer style     */
+.footer-wrapper{
+	padding-top: 3%;
+}
+footer{
+	display: block;
+	width: 100%;
+	bottom: 0;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+
+
+
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea
+{
+	background-color: #1e88e5 !important;
+	border: none !important;
+}
+
+button, input, optgroup, select, textarea
+{
+	color: white !important;
+	font-size: 1.2rem;
+	padding-left: 10px !important;
+}
+
+.sub-btnn{
+	position: relative !important;
+	top: 7px !important;
+}
+.res-card{
+	width: 64vw;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	background-color: #1e88e5;
+	border-radius: none !important;
+	box-shadow: none !important;
+	color: white;
+	padding: 15px;
+	min-height: 100px;
+}
+@media only screen and (min-width: 701px) {
+   .btm-mob{
+		
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 340px) {
+    /*For Desktop */
+   .btm-mob h3{
+		
+		font-size: 30px;
+	}
+}
+.reg_text{
+	padding-left: 10px;
+}
+
+::-webkit-input-placeholder { 
+  color: white !important;
+  padding-left: 10px;
+}
+::-moz-placeholder { 
+  color: white !important;
+  padding: 10px;
+}
+
+footer p a {
+	color: white;
+}
+#fb_i , #tw_i{
+	transition: color 0.3s ease-in;
+}
+#fb_i:hover{
+	color: #3b5998;
+}
+#tw_i:hover{
+	color: #0084b4 ;
+}
+
+@media only screen and (max-width: 601px) {
+
+}

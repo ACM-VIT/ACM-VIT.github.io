@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="description" content="Portal for displaying results for the ACM recruitments.">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+	<!-- Recommended favicon format -->
+
+	<title>ACMVIT | Core committee selections result</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="none" onload="if(media!=='all')media='all'">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="none" onload="if(media!=='all')media='all'">
+	<style type="text/css">
+		#result_card{
+			display: none;
+		}
+		.loader-wrapper{
+			text-align: center;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="whole-wrapper">
+		<div class="custom-navbar-wrapper">
+			<nav>
+				<div class="nav-wrapper">
+					<a href="http://acmvit.in" target="_blank" class="brand-logo"><img src="img/acmlogo1.png" class="mainlogo1" alt="ACM-VIT"></a>
+
+				</div>
+			</nav>
+		</div>
+
+		<div class="section-1">	
+			<!-- <div class="row hide-on-med-and-down">
+				<div class="col m4" id="pad-left-0">
+					<div class="side-blue-wrapper ">
+						<div class="content-inside-side-blue ">
+							<p class="flow-text" id="head-acm-tab">ASSOCIATION FOR COMPUTING MACHINERY</p>
+							<p class="remove-margin-top">VIT Student chapter</p>
+						
+						</div>
+					</div>
+				</div>
+
+				<div class="col m8">
+					<div class="because-tech-matter">
+						<h2><sup>`</sup>Because Technology Matters<sup>`</sup></h2>
+					</div>
+				</div>
+			</div> -->
+			<div class="row">
+				<div class="">
+					<div class="because-tech-matter btm-mob">
+						<h3>CORE COMMITTEE SELECTION RESULTS</h3>
+					</div>
+				</div>
+				<br>
+				<form method="POST" id="submitForm">
+					<div class="row">
+						<div class="col s8 m3 offset-m4 offset-s1">
+							<div class="input-field">
+								<input class="regno" id="regno" placeholder="Enter Your reg. No" pattern="^([0-9]{2})([a-zA-Z]{3})([0-9]{3,4})$" type="text" class="validate">
+								<!-- <label for="regno" class="reg_text" data-error="wrong">Registration Number</label> -->
+							</div>
+						</div>
+						<div class="col s3 m2" style="color:#222">
+							<button type="submit" class="#1e88e5 blue darken-1 btn-floating btn-large waves-effect waves-light sub-btnn"><i class="material-icons right">send</i></button>
+						</div>
+					</div>
+				</form>
+				<div class="loader-wrapper">
+					<div class="preloader-wrapper big active">
+					    <div class="spinner-layer spinner-blue-only">
+					    	<div class="circle-clipper left">
+					        	<div class="circle"></div>
+					    	</div>
+					    	<div class="gap-patch">
+					    		<div class="circle"></div>
+					    	</div>
+					    	<div class="circle-clipper right">
+					    		<div class="circle"></div>
+					    	</div>
+						</div>
+					</div>
+				</div>
+				<div id="result_card" class="card res-card">
+					<h5 id="result_para"></h5>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="footer-wrapper ">
+			<footer class="#424242 grey darken-3">
+				<h6>Contact US</h6>
+				<p>
+					<a href="https://facebook.com/ACM.VITU" target="_blank" id="fb_i"><i class="fa fa-facebook fa-2x"></i></a> &nbsp;
+					<a href="https://twitter.com/ACM_VIT" target="_blank" id="tw_i"><i class="fa fa-twitter fa-2x"></i></a><br>
+					<a href="mailto:vituacm@gmail.com" target="_top">vituacm@gmail.com</a><br>
+					<span>+91 8279887513</span>
+				</p>
+			</footer>
+		</div>
+
+	</div>
+	<!-- footer div -->
+
+	<!-- footer end -->
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#submitForm').on('submit', function(e) {
+				e.preventDefault();
+
+				var str = $('#regno').val();
+				var patt = /^([0-9]{2})([a-zA-Z]{3})([0-9]{4})$/i;
+				var regno_result = patt.test(str);
+				if(!regno_result)
+				{
+					alert('Registration number is not valid');
+					return false;
+				}
+				$('.loader-wrapper').css('display','block');
+				$("#result_card").hide();
+				$.ajax({
+					url: "http://acmrecruitment.herokuapp.com/submit/check?regno="+str,
+					success: function(result){
+						$('.loader-wrapper').css('display','none');
+						var selected=result.selected;
+						console.log(selected)
+						if(selected==true){
+							show_success(result.name,result.domain);
+
+						}
+						else if(selected==false){
+							show_failure();
+						}
+						else{
+							show_not_registered();
+						}
+
+					}
+				});
+
+			});
+
+			function show_success(name,department){
+				var text="Congratulations "+capitalize(name)+"! You have been selected in ACM under "+capitalize(department)+" domain. We look forward to working with you. Welcome to the ACM family!";
+				
+				
+				$("#result_para").html(text);
+				// $("#result_card").addClass("success-card");
+				$('#result_card').css({'background-color':'#558b2f'});
+				$("#result_card").fadeIn();
+			}
+
+			function show_failure(){
+				var text="We are sorry to inform you that you did not clear the last round of recruitment. We wish you best of luck and hope you will continue to be a part of ACM by participating in our events and workshops.";
+
+				$("#result_para").html(text);
+				// $("#result_card").addClass("success-card")#b71c1c;
+				$('#result_card').css({'background-color':'#bf360c'});
+				$("#result_card").fadeIn();
+			}
+
+			function show_not_registered(){
+				var text="We are sorry to inform you that you did not appeared for the second round of recruitments. We wish you best of luck and hope you will continue to be a part of ACM by participating in our events and workshops.";
+
+				$("#result_para").html(text);
+				$('#result_card').css({'background-color':'#d32f2f'});
+				$("#result_card").fadeIn();
+			}
+
+			function capitalize(string) 
+			{
+				return string.charAt(0).toUpperCase() + string.slice(1);
+			}
+		});
+	</script>
+</body>
+</html>
+
+
+<!--
+
+faliuew :- rgb(224, 34, 34), 
+
+-->
